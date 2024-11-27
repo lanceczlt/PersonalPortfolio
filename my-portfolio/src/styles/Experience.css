@@ -1,0 +1,37 @@
+.experience-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+  }
+  
+  .experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .job {
+    margin-bottom: 30px;
+  }
+  
+  .job h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .job h4 {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  .job span {
+    display: block;
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .job ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
