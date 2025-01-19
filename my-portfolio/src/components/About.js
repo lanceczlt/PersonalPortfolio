@@ -15,9 +15,9 @@ const About = () => {
           alignItems: 'center',  // Vertically centers the content
         }}
       >
-        <Grid container spacing={4} alignItems="center" justifyContent="center">
+        <Grid container spacing={4} alignItems="center" justifyContent="left">
           {/* Left Column: Image Placeholder */}
-          <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: 'left' }}>
             <Avatar
               sx={{
                 width: 150,
@@ -43,16 +43,7 @@ const About = () => {
               paragraph 
               sx={{ color: 'text.primary' }}
             >
-              A Software Engineer with experience in backend systems, cloud deployments,
-              automation, and frontend development. I enjoy building scalable solutions and enhancing the
-              reliability of complex systems.
-            </Typography>
-            <Typography 
-              variant="body1" 
-              paragraph 
-              sx={{ color: 'text.primary' }}
-            >
-              Feel free to download my resume below or contact me for more information.
+              Software Engineer
             </Typography>
             <Button
               variant="contained"

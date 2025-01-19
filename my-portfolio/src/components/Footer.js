@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   const theme = useTheme();
-  const iconColor = theme.palette.mode === 'light' ? '#000000' : '#ffffff';
+  const iconColor = theme.palette.mode === 'dark' ? '#000000' : '#ffffff';
 
   return (
     <Box
@@ -53,3 +53,18 @@ const Footer = () => {
 };
 
 export default Footer;
+// import React from 'react';
+// import { Box, Typography, Link } from '@mui/material';
+
+// function Footer() {
+//   return (
+//     <Box component="footer" sx={{ py: 3, px: 2, mt: 'auto', backgroundColor: '#1c1c1c', textAlign: 'center' }}>
+//       <Typography variant="body1">
+//         Get in touch: lancechoong167@gmail.com | (123) 456-7890 |{' '}
+//         <Link href="https://linkedin.com/in/lance-choong" target="_blank" rel="noopener" color="inherit">LinkedIn</Link>
+//       </Typography>
+//     </Box>
+//   );
+// }
+
+// export default Footer;

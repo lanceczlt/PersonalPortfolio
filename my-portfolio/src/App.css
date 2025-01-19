@@ -1,52 +1,29 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Remove any manual background color settings */
+.taskbar {
+  background-color: transparent; /* Let the MUI theme control this */
+  color: inherit; /* Let the color inherit from the theme */
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+}
+
+.page {
+  padding: 20px;
+}
+
+.page h1 {
+  color: inherit; /* Let the text color inherit from the theme */
+}
+
+/* Footer styles can stay as is */
+.footer {
+  background-color: #333; /* Assuming it's the same as before */
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-main {
-  padding: 0 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
