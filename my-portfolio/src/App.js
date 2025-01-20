@@ -28,13 +28,15 @@ const theme = createTheme({
       primary: '#ffffff',
       secondary: '#b0bec5',
       dark: '#1c1c1c',
-      light: '#FFFFFF'
+      light: '#FFFFFF',
     },
-    button:{
+    button: {
       primary: '#B06500'
     }
   },
 });
+
+const basePath = "/PersonalPortfolio";
 
 function App() {
   return (
@@ -44,11 +46,11 @@ function App() {
           <Taskbar />
           <Box sx={{ flexGrow: 1 }}>
             <Routes>
-              <Route path="/" element={<><Home /></>} />
-              <Route path="/projects" element={<><Projects /></>} />
-              <Route path="/work-experience" element={<><WorkExperience /></>} />
-              <Route path="/resume" element={<><Resume /></>} />
-              <Route path="/certifications" element={<><Certifications /></>} />
+              <Route path={`${basePath}/`} element={<Home />} />
+              <Route path={`${basePath}/projects`} element={<Projects />} />
+              <Route path={`${basePath}/work-experience`} element={<WorkExperience />} />
+              <Route path={`${basePath}/resume`} element={<Resume />} />
+              <Route path={`${basePath}/certifications`} element={<Certifications />} />
             </Routes>
           </Box>
           <Footer />

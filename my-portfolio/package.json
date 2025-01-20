@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "https://lanceczlt.github.io/PersonalPortfolio",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",

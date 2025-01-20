@@ -12,44 +12,56 @@ function Certifications() {
     },
     {
       image: "https://images.credly.com/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob",
-      name: "Certified Kuberenetes Application Developer",
+      name: "Certified Kubernetes Application Developer",
       link: "",
     },
   ];
 
   return (
-    <Box className="page" sx={{ py: 4, backgroundColor: theme.palette.background.box, minHeight: '60vh'}}>
+    <Box className="page" sx={{ py: 4, backgroundColor: theme.palette.background.box, minHeight: '47vh'}}>
       <Grid container justifyContent="center" spacing={2}>
         {certifications.map((cert, index) => (
-          <Grid item xs={12} sm={2} mt={15} mb={10} key={index}> 
-            <Card sx={{ 
-              maxWidth: 280, 
-              margin: '0 auto', 
-              height: 350, 
-              display: 'flex', 
-              flexDirection: 'column' 
-            }}>
+          <Grid item xs={12} sm={6} md={2} key={index}>
+            <Card sx={{ maxWidth: 280, margin: '0 auto', height: 'auto', display: 'flex', flexDirection: 'column' }}>
               <CardMedia
                 component="img"
                 image={cert.image}
                 alt={`Certification Logo ${index + 1}`}
                 sx={{
-                  height: 180, 
+                  height: { xs: 150, sm: 180 },
                   objectFit: 'contain',
                   width: '100%',
-                  pt: 2
+                  pt: 2,
                 }}
               />
               <CardContent sx={{ flexGrow: 1 }}>
-                <Typography variant="h6">{cert.name}</Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontSize: { xs: '1rem', sm: '1.2rem' }, 
+                    fontWeight: 'bold',
+                    mb: 1,
+                  }}
+                >
+                  {cert.name}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ fontSize: { xs: '0.8rem', sm: '1rem' }, mb: 2 }}
+                >
                   {cert.description}
                 </Typography>
                 <Button
                   href={cert.link}
                   target="_blank"
                   rel="noopener"
-                  sx={{ mt: 2, backgroundColor: theme.palette.button.primary, color: theme.palette.text.light}}
+                  sx={{
+                    mt: 2,
+                    backgroundColor: theme.palette.button.primary,
+                    color: theme.palette.text.light,
+                    fontSize: { xs: '0.9rem', sm: '1rem' }, 
+                  }}
                 >
                   View Certification
                 </Button>

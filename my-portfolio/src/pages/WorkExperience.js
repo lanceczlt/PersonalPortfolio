@@ -54,7 +54,7 @@ function WorkExperience() {
       }}
     >
       <Box sx={{ maxWidth: 1500, mt: 5, px: 2, display: 'flex', justifyContent: 'flex-start' }}>
-        <Box sx={{ flexGrow: 1, marginLeft: '13.5%' }}>
+        <Box sx={{ flexGrow: 1, marginLeft: { xs: '0%', sm: '14.5%' }, width: '100%' }}>
           <Timeline position="right">
             {workExperiences.map((experience, index) => (
               <TimelineItem key={index} sx={{ minHeight: 200 }}>
@@ -64,9 +64,9 @@ function WorkExperience() {
                     flex: 0.2,
                     textAlign: 'right',
                     color: theme.palette.text.dark,
-                    fontSize: '1.2rem',
+                    fontSize: { xs: '1rem', sm: '1.2rem' },
                     display: 'flex',
-                    alignItems: 'normal',
+                    alignItems: 'center', 
                   }}
                 >
                   {experience.date}
@@ -77,7 +77,11 @@ function WorkExperience() {
                   <Avatar
                     src={experience.logo}
                     alt={`${experience.title} Logo`}
-                    sx={{ width: 80, height: 80, mt: 2 }}
+                    sx={{
+                      width: { xs: 50, sm: 80 },
+                      height: { xs: 50, sm: 80 },
+                      mt: 2,
+                    }}
                   />
                   {index < workExperiences.length - 1 && (
                     <TimelineConnector
@@ -97,6 +101,10 @@ function WorkExperience() {
                       backgroundColor: theme.palette.background.paper,
                       borderRadius: 2,
                       color: theme.palette.text.primary,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'center',
+                      alignItems: 'flex-start',
                     }}
                   >
                     <Typography
@@ -105,11 +113,18 @@ function WorkExperience() {
                         fontWeight: 'bold',
                         color: theme.palette.primary.secondary,
                         mb: 1,
+                        fontSize: { xs: '1rem', sm: '1.2rem' },
                       }}
                     >
                       {experience.title} - {experience.role}
                     </Typography>
-                    <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: '1.1rem' }}>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        color: theme.palette.text.secondary,
+                        fontSize: { xs: '0.9rem', sm: '1.1rem' },
+                      }}
+                    >
                       {experience.description}
                     </Typography>
                   </Box>

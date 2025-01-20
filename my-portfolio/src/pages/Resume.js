@@ -2,10 +2,19 @@ import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
 
 function Resume() {
-  const theme = useTheme()
+  const theme = useTheme();
+
   return (
-    <Box className="resume-page" sx={{ py: 4, ml: 3, textAlign: 'center', backgroundColor: theme.palette.background.box }}>
-      <Typography variant="body1" gutterBottom>
+    <Box
+      className="resume-page"
+      sx={{
+        py: 4,
+        px: { xs: 2, sm: 3 },
+        textAlign: 'center',
+        backgroundColor: theme.palette.background.box,
+      }}
+    >
+      <Typography variant="body1" gutterBottom sx={{ fontSize: { xs: '0.9rem', sm: '1rem' } }}>
         You can view or download my resume below:
       </Typography>
 
