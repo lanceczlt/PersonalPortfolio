@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.671640aa.css",
-    "main.js": "/personal-portfolio/static/js/main.92e4e244.js",
-    "static/js/453.acca0757.chunk.js": "/personal-portfolio/static/js/453.acca0757.chunk.js",
-    "static/media/slick.svg": "/personal-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/personal-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/personal-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/personal-portfolio/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/personal-portfolio/index.html",
-    "main.671640aa.css.map": "/personal-portfolio/static/css/main.671640aa.css.map",
-    "main.92e4e244.js.map": "/personal-portfolio/static/js/main.92e4e244.js.map",
-    "453.acca0757.chunk.js.map": "/personal-portfolio/static/js/453.acca0757.chunk.js.map"
+    "main.css": "/PersonalPortfolio/static/css/main.736cb547.css",
+    "main.js": "/PersonalPortfolio/static/js/main.6a5a2864.js",
+    "static/js/453.acca0757.chunk.js": "/PersonalPortfolio/static/js/453.acca0757.chunk.js",
+    "static/media/slick.svg": "/PersonalPortfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/PersonalPortfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/PersonalPortfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/PersonalPortfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/PersonalPortfolio/index.html",
+    "main.736cb547.css.map": "/PersonalPortfolio/static/css/main.736cb547.css.map",
+    "main.6a5a2864.js.map": "/PersonalPortfolio/static/js/main.6a5a2864.js.map",
+    "453.acca0757.chunk.js.map": "/PersonalPortfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.671640aa.css",
-    "static/js/main.92e4e244.js"
+    "static/css/main.736cb547.css",
+    "static/js/main.6a5a2864.js"
   ]
 }
