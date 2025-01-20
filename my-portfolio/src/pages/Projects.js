@@ -47,42 +47,58 @@ function Projects() {
         backgroundColor: theme.palette.background.box,
       }}
     >
-      <Grid container spacing={5} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center">
         {projects.map((project, index) => (
           <React.Fragment key={index}>
-            <Grid item xs={2} sm={6} md={2.5}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
               <Box
                 sx={{
                   p: 3,
-                  minHeight: '200px',
-                  maxWidth: '500px',
+                  minHeight: '250px',
                   backgroundColor: theme.palette.background.default,
                   borderRadius: 2,
                   textAlign: 'center',
                   boxShadow: 3,
                   mx: 'auto',
-                  mt: 5,
+                  mt: 3,
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'space-between', // Ensures even spacing for the content
+                  justifyContent: 'space-between',
                 }}
               >
                 <div>
-                  <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, color: theme.palette.text.light }}>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 'bold',
+                      mb: 2,
+                      color: theme.palette.text.light,
+                      fontSize: { xs: '1.2rem', sm: '1.4rem' },
+                    }}
+                  >
                     {project.name}
                   </Typography>
                   <Typography
                     variant="body2"
-                    sx={{ mb: 2, overflow: 'hidden', textOverflow: 'ellipsis', color: theme.palette.text.secondary }}
+                    sx={{
+                      mb: 2,
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      color: theme.palette.text.secondary,
+                      fontSize: { xs: '0.9rem', sm: '1rem' },
+                    }}
                   >
                     {project.description}
                   </Typography>
                 </div>
-                {/* Position technologies right above the button */}
                 <Box sx={{ mt: 'auto' }}>
                   <Typography
                     variant="body2"
-                    sx={{ color: theme.palette.text.secondary, mb: 2 }}
+                    sx={{
+                      color: theme.palette.text.secondary,
+                      mb: 2,
+                      fontSize: { xs: '0.8rem', sm: '0.9rem' },
+                    }}
                   >
                     <strong>Technologies Used:</strong> {project.technologies}
                   </Typography>
@@ -93,7 +109,12 @@ function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener"
-                      sx={{ backgroundColor: theme.palette.button.primary, color: theme.palette.text.light }}
+                      sx={{
+                        backgroundColor: theme.palette.button.primary,
+                        color: theme.palette.text.light,
+                        fontSize: { xs: '0.9rem', sm: '1rem' },
+                        padding: { xs: '8px 12px', sm: '10px 16px' },
+                      }}
                     >
                       View Project
                     </Button>
@@ -103,7 +124,15 @@ function Projects() {
             </Grid>
             {(index + 1) % 2 === 0 && index !== projects.length - 1 && (
               <Grid item xs={12}>
-                <Divider sx={{ borderColor: theme.palette.background.default, my: 5, width: '27%', mx: 'auto', borderWidth: 1 }} />
+                <Divider
+                  sx={{
+                    borderColor: theme.palette.background.default,
+                    my: 5,
+                    width: '60%',
+                    mx: 'auto',
+                    borderWidth: 1,
+                  }}
+                />
               </Grid>
             )}
           </React.Fragment>
