@@ -24,7 +24,7 @@ function Home() {
         paddingBottom: '5vh'
       }}
     >
-      {/* Avatar */}
+
       <Avatar
         src={"https://media.licdn.com/dms/image/v2/D5603AQFf7SFw_Xi7lw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676135685638?e=1743033600&v=beta&t=u_fDTDQ7YDUEow6jWUoOnA5gRtgk8BRLhFKyiLeyheo"}
         alt="Lance Choong"
@@ -35,8 +35,7 @@ function Home() {
           marginRight: { sm: 3 },  
         }}
       />
-      
-      {/* Description */}
+
       <Box
         sx={{
           maxWidth: 740,

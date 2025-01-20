@@ -43,7 +43,7 @@ function Taskbar() {
           color="inherit"
           aria-label="menu"
           onClick={handleMenuClick}
-          sx={{ display: { xs: 'block', sm: 'none' } }} // Only show on mobile
+          sx={{ display: { xs: 'block', sm: 'none' } }} 
         >
           <MenuIcon />
         </IconButton>
@@ -70,8 +70,6 @@ function Taskbar() {
           <MenuItem onClick={handleMenuClose} component={Link} to="/PersonalPortfolio/resume">Resume</MenuItem>
         </Menu>
       </Toolbar>
-
-      {/* PageHeader Component */}
       <PageHeader title={currentTitle} />
     </AppBar>
   );
