@@ -8,12 +8,14 @@ function Taskbar() {
   const location = useLocation();
 
   // Map routes to titles
+  
   const pageTitles = {
-    '/': 'About Me',
-    '/projects': 'Projects',
-    '/work-experience': 'Work Experience',
-    '/certifications': 'Certifications',
-    '/resume': 'Resume',
+    '/PersonalPortfolio': 'About Me',
+    '/PersonalPortfolio/': 'About Me',
+    '/PersonalPortfolio/projects': 'Projects',
+    '/PersonalPortfolio/work-experience': 'Work Experience',
+    '/PersonalPortfolio/certifications': 'Certifications',
+    '/PersonalPortfolio/resume': 'Resume',
   };
 
   // Get the title based on the current path
@@ -25,11 +27,11 @@ function Taskbar() {
         <Typography variant="h6" sx={{ flexGrow: 1, color: theme.palette.text.primary }}>
           Lance Choong
         </Typography>
-        <Button color="inherit" component={Link} to="/">Home</Button>
-        <Button color="inherit" component={Link} to="/projects">Projects</Button>
-        <Button color="inherit" component={Link} to="/work-experience">Work Experience</Button>
-        <Button color="inherit" component={Link} to="/certifications">Certifications</Button>
-        <Button color="inherit" component={Link} to="/resume">Resume</Button>
+        <Button color="inherit" component={Link} to="/PersonalPortfolio/">Home</Button>
+        <Button color="inherit" component={Link} to="/PersonalPortfolio/projects">Projects</Button>
+        <Button color="inherit" component={Link} to="/PersonalPortfolio/work-experience">Work Experience</Button>
+        <Button color="inherit" component={Link} to="/PersonalPortfolio/certifications">Certifications</Button>
+        <Button color="inherit" component={Link} to="/PersonalPortfolio/resume">Resume</Button>
       </Toolbar>
       {/* Render PageHeader with the current title */}
       <PageHeader title={currentTitle} />
