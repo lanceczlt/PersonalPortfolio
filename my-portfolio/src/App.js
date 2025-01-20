@@ -27,8 +27,12 @@ const theme = createTheme({
     text: {
       primary: '#ffffff',
       secondary: '#b0bec5',
-      dark: '#1c1c1c'
+      dark: '#1c1c1c',
+      light: '#FFFFFF'
     },
+    button:{
+      primary: '#B06500'
+    }
   },
 });
 
