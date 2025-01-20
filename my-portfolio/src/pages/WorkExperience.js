@@ -15,7 +15,7 @@ import {
 } from '@mui/lab';
 
 function WorkExperience() {
-  const theme = useTheme(); // Access the theme
+  const theme = useTheme();
 
   const workExperiences = [
     {
@@ -49,12 +49,11 @@ function WorkExperience() {
         display: 'flex',
         justifyContent: 'center',
         backgroundColor: theme.palette.background.box,
-        color: theme.palette.text.primary, 
-        minHeight: '60vh', // Ensure the box takes up at least 60% of the viewport height
+        color: theme.palette.text.primary,
+        minHeight: '60vh',
       }}
     >
       <Box sx={{ maxWidth: 1500, mt: 5, px: 2, display: 'flex', justifyContent: 'flex-start' }}>
-        {/* Slightly shift the timeline container to the right */}
         <Box sx={{ flexGrow: 1, marginLeft: '13.5%' }}>
           <Timeline position="right">
             {workExperiences.map((experience, index) => (
@@ -64,7 +63,7 @@ function WorkExperience() {
                   sx={{
                     flex: 0.2,
                     textAlign: 'right',
-                    color: theme.palette.text.dark, // Use theme secondary text color
+                    color: theme.palette.text.dark,
                     fontSize: '1.2rem',
                     display: 'flex',
                     alignItems: 'normal',
@@ -84,7 +83,7 @@ function WorkExperience() {
                     <TimelineConnector
                       sx={{
                         height: 200,
-                        backgroundColor: theme.palette.primary.paper, // Use theme primary color
+                        backgroundColor: theme.palette.primary.paper,
                       }}
                     />
                   )}
@@ -95,16 +94,16 @@ function WorkExperience() {
                   <Box
                     sx={{
                       p: 3,
-                      backgroundColor: theme.palette.background.paper, // Use paper background
+                      backgroundColor: theme.palette.background.paper,
                       borderRadius: 2,
-                      color: theme.palette.text.primary, // Use primary text color
+                      color: theme.palette.text.primary,
                     }}
                   >
                     <Typography
                       variant="h6"
                       sx={{
                         fontWeight: 'bold',
-                        color: theme.palette.primary.secondary, // Use primary color for title
+                        color: theme.palette.primary.secondary,
                         mb: 1,
                       }}
                     >
