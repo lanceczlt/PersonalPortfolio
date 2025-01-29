@@ -13,7 +13,7 @@ function Certifications() {
     {
       image: "https://images.credly.com/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob",
       name: "Certified Kubernetes Application Developer",
-      link: "",
+      link: "https://www.credly.com/badges/bfa0b918-aeaf-45c5-b3e2-105258f6d1e0/public_url",
     },
   ];
 
