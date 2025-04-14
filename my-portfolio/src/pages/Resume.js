@@ -20,7 +20,7 @@ function Resume() {
 
       <Box
         component="iframe"
-        src="https://drive.google.com/file/d/1BJZJxK3aFlnTmm3l_PI7iKrQ4f2WYSvV/preview"
+        src="https://drive.google.com/file/d/1Hrmyt8hWC7eDMa6iCjLwzss4RNqRSQPA/preview"
         sx={{
           width: '100%',
           maxWidth: '900px',

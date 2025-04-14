@@ -26,7 +26,7 @@ function Home() {
     >
 
       <Avatar
-        src={"https://media.licdn.com/dms/image/v2/D5603AQFf7SFw_Xi7lw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676135685638?e=1743033600&v=beta&t=u_fDTDQ7YDUEow6jWUoOnA5gRtgk8BRLhFKyiLeyheo"}
+        src={"https://drive.google.com/thumbnail?id=1MXogEmBEP7Vqfjkpm-5M_g1j1QD3g02-&sz=s400"}
         alt="Lance Choong"
         sx={{
           width: { xs: 120, sm: 200 },
